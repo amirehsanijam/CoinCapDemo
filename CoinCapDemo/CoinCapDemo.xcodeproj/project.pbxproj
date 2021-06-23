@@ -15,6 +15,17 @@
 		2905B8762683AB7A005BF20B /* MockNetworkAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8752683AB7A005BF20B /* MockNetworkAgent.swift */; };
 		2905B8782683AB8E005BF20B /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8772683AB8E005BF20B /* APIRouter.swift */; };
 		2905B87A2683ABA3005BF20B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8792683ABA3005BF20B /* NetworkError.swift */; };
+		2905B87C2683ACEA005BF20B /* UserDefaultAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B87B2683ACEA005BF20B /* UserDefaultAgent.swift */; };
+		2905B87E2683AD18005BF20B /* DIAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B87D2683AD18005BF20B /* DIAgent.swift */; };
+		2905B8802683AD63005BF20B /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B87F2683AD63005BF20B /* Log.swift */; };
+		2905B8832683B0DF005BF20B /* DictionaryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8822683B0DF005BF20B /* DictionaryEncoder.swift */; };
+		2905B8852683B40D005BF20B /* DefaultResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8842683B40D005BF20B /* DefaultResponseModel.swift */; };
+		2905B8882683BD7C005BF20B /* CryptoCurrenciesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8872683BD7C005BF20B /* CryptoCurrenciesList.swift */; };
+		2905B88D2683BE40005BF20B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B88C2683BE40005BF20B /* BaseViewController.swift */; };
+		2905B88F2683BE82005BF20B /* Coordinatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B88E2683BE82005BF20B /* Coordinatable.swift */; };
+		2905B8912683BEA7005BF20B /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8902683BEA7005BF20B /* BaseViewModel.swift */; };
+		2905B8942683BEE8005BF20B /* Storyboardable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8932683BEE8005BF20B /* Storyboardable.swift */; };
+		2905B8962683BF3B005BF20B /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8952683BF3B005BF20B /* ViewModelable.swift */; };
 		33135E05F3A642790AB1813D /* Pods_CoinCapDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C24242C310D21510032BD7 /* Pods_CoinCapDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +40,17 @@
 		2905B8752683AB7A005BF20B /* MockNetworkAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkAgent.swift; sourceTree = "<group>"; };
 		2905B8772683AB8E005BF20B /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		2905B8792683ABA3005BF20B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		2905B87B2683ACEA005BF20B /* UserDefaultAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultAgent.swift; sourceTree = "<group>"; };
+		2905B87D2683AD18005BF20B /* DIAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIAgent.swift; sourceTree = "<group>"; };
+		2905B87F2683AD63005BF20B /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		2905B8822683B0DF005BF20B /* DictionaryEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryEncoder.swift; sourceTree = "<group>"; };
+		2905B8842683B40D005BF20B /* DefaultResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultResponseModel.swift; sourceTree = "<group>"; };
+		2905B8872683BD7C005BF20B /* CryptoCurrenciesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrenciesList.swift; sourceTree = "<group>"; };
+		2905B88C2683BE40005BF20B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		2905B88E2683BE82005BF20B /* Coordinatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinatable.swift; sourceTree = "<group>"; };
+		2905B8902683BEA7005BF20B /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		2905B8932683BEE8005BF20B /* Storyboardable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboardable.swift; sourceTree = "<group>"; };
+		2905B8952683BF3B005BF20B /* ViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
 		51FFD881D11E699E0DD4D6E3 /* Pods-CoinCapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCapDemo.debug.xcconfig"; path = "Target Support Files/Pods-CoinCapDemo/Pods-CoinCapDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		59C24242C310D21510032BD7 /* Pods_CoinCapDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCapDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		711A7D6874C165BB44A493A0 /* Pods-CoinCapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCapDemo.release.xcconfig"; path = "Target Support Files/Pods-CoinCapDemo/Pods-CoinCapDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -68,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				2905B87026839765005BF20B /* App */,
+				2905B8862683BD36005BF20B /* AppModules */,
 				2905B8722683AB07005BF20B /* Core */,
 				2905B871268397AC005BF20B /* Resources */,
 				2905B8672683959A005BF20B /* LaunchScreen.storyboard */,
@@ -96,12 +119,46 @@
 		2905B8722683AB07005BF20B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2905B88B2683BE30005BF20B /* Base */,
 				2905B8732683AB1D005BF20B /* NetwrokAgent.swift */,
 				2905B8752683AB7A005BF20B /* MockNetworkAgent.swift */,
 				2905B8772683AB8E005BF20B /* APIRouter.swift */,
 				2905B8792683ABA3005BF20B /* NetworkError.swift */,
+				2905B87B2683ACEA005BF20B /* UserDefaultAgent.swift */,
+				2905B87D2683AD18005BF20B /* DIAgent.swift */,
+				2905B87F2683AD63005BF20B /* Log.swift */,
+				2905B8822683B0DF005BF20B /* DictionaryEncoder.swift */,
+				2905B8842683B40D005BF20B /* DefaultResponseModel.swift */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		2905B8862683BD36005BF20B /* AppModules */ = {
+			isa = PBXGroup;
+			children = (
+				2905B8872683BD7C005BF20B /* CryptoCurrenciesList.swift */,
+			);
+			path = AppModules;
+			sourceTree = "<group>";
+		};
+		2905B88B2683BE30005BF20B /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2905B8922683BEAD005BF20B /* Protocols */,
+				2905B88C2683BE40005BF20B /* BaseViewController.swift */,
+				2905B8902683BEA7005BF20B /* BaseViewModel.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2905B8922683BEAD005BF20B /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2905B88E2683BE82005BF20B /* Coordinatable.swift */,
+				2905B8932683BEE8005BF20B /* Storyboardable.swift */,
+				2905B8952683BF3B005BF20B /* ViewModelable.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		612DD563428622665D16B046 /* Pods */ = {
@@ -234,9 +291,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2905B88D2683BE40005BF20B /* BaseViewController.swift in Sources */,
+				2905B8832683B0DF005BF20B /* DictionaryEncoder.swift in Sources */,
+				2905B8882683BD7C005BF20B /* CryptoCurrenciesList.swift in Sources */,
 				2905B8762683AB7A005BF20B /* MockNetworkAgent.swift in Sources */,
+				2905B87C2683ACEA005BF20B /* UserDefaultAgent.swift in Sources */,
+				2905B8802683AD63005BF20B /* Log.swift in Sources */,
+				2905B88F2683BE82005BF20B /* Coordinatable.swift in Sources */,
 				2905B8782683AB8E005BF20B /* APIRouter.swift in Sources */,
 				2905B85D26839598005BF20B /* AppDelegate.swift in Sources */,
+				2905B8852683B40D005BF20B /* DefaultResponseModel.swift in Sources */,
+				2905B87E2683AD18005BF20B /* DIAgent.swift in Sources */,
+				2905B8912683BEA7005BF20B /* BaseViewModel.swift in Sources */,
+				2905B8962683BF3B005BF20B /* ViewModelable.swift in Sources */,
+				2905B8942683BEE8005BF20B /* Storyboardable.swift in Sources */,
 				2905B87A2683ABA3005BF20B /* NetworkError.swift in Sources */,
 				2905B85F26839598005BF20B /* SceneDelegate.swift in Sources */,
 				2905B8742683AB1D005BF20B /* NetwrokAgent.swift in Sources */,
@@ -379,6 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://pro-api.coinmarketcap.com/";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 274Q3U39V6;
 				INFOPLIST_FILE = CoinCapDemo/Info.plist;
@@ -399,6 +468,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://pro-api.coinmarketcap.com/";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 274Q3U39V6;
 				INFOPLIST_FILE = CoinCapDemo/Info.plist;
