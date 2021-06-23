@@ -10,7 +10,6 @@
 		2905B85D26839598005BF20B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B85C26839598005BF20B /* AppDelegate.swift */; };
 		2905B85F26839598005BF20B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B85E26839598005BF20B /* SceneDelegate.swift */; };
 		2905B8662683959A005BF20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2905B8652683959A005BF20B /* Assets.xcassets */; };
-		2905B8692683959A005BF20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2905B8672683959A005BF20B /* LaunchScreen.storyboard */; };
 		2905B8742683AB1D005BF20B /* NetwrokAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8732683AB1D005BF20B /* NetwrokAgent.swift */; };
 		2905B8762683AB7A005BF20B /* MockNetworkAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8752683AB7A005BF20B /* MockNetworkAgent.swift */; };
 		2905B8782683AB8E005BF20B /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8772683AB8E005BF20B /* APIRouter.swift */; };
@@ -37,6 +36,8 @@
 		2905B8AE2683C2C9005BF20B /* CryptoDetailAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8A82683C2C9005BF20B /* CryptoDetailAPIRouter.swift */; };
 		2905B8AF2683C2C9005BF20B /* CryptoDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8A92683C2C9005BF20B /* CryptoDetailModel.swift */; };
 		2905B8B02683C2C9005BF20B /* CryptoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8AA2683C2C9005BF20B /* CryptoDetailViewModel.swift */; };
+		2905B8B22683C35B005BF20B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8B12683C35B005BF20B /* MainCoordinator.swift */; };
+		2905B8B42683CB2D005BF20B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2905B8672683959A005BF20B /* LaunchScreen.storyboard */; };
 		33135E05F3A642790AB1813D /* Pods_CoinCapDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59C24242C310D21510032BD7 /* Pods_CoinCapDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		2905B8A82683C2C9005BF20B /* CryptoDetailAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailAPIRouter.swift; sourceTree = "<group>"; };
 		2905B8A92683C2C9005BF20B /* CryptoDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailModel.swift; sourceTree = "<group>"; };
 		2905B8AA2683C2C9005BF20B /* CryptoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailViewModel.swift; sourceTree = "<group>"; };
+		2905B8B12683C35B005BF20B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		51FFD881D11E699E0DD4D6E3 /* Pods-CoinCapDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCapDemo.debug.xcconfig"; path = "Target Support Files/Pods-CoinCapDemo/Pods-CoinCapDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		59C24242C310D21510032BD7 /* Pods_CoinCapDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoinCapDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		711A7D6874C165BB44A493A0 /* Pods-CoinCapDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoinCapDemo.release.xcconfig"; path = "Target Support Files/Pods-CoinCapDemo/Pods-CoinCapDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				2905B88E2683BE82005BF20B /* Coordinatable.swift */,
 				2905B8932683BEE8005BF20B /* Storyboardable.swift */,
 				2905B8952683BF3B005BF20B /* ViewModelable.swift */,
+				2905B8B12683C35B005BF20B /* MainCoordinator.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -286,8 +289,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2905B8B42683CB2D005BF20B /* LaunchScreen.storyboard in Resources */,
 				2905B89F2683C29C005BF20B /* CryptoCurrenciesListViewController.storyboard in Resources */,
-				2905B8692683959A005BF20B /* LaunchScreen.storyboard in Resources */,
 				2905B8662683959A005BF20B /* Assets.xcassets in Resources */,
 				2905B8AC2683C2C9005BF20B /* CryptoDetailViewController.storyboard in Resources */,
 			);
@@ -367,6 +370,7 @@
 				2905B87A2683ABA3005BF20B /* NetworkError.swift in Sources */,
 				2905B85F26839598005BF20B /* SceneDelegate.swift in Sources */,
 				2905B8742683AB1D005BF20B /* NetwrokAgent.swift in Sources */,
+				2905B8B22683C35B005BF20B /* MainCoordinator.swift in Sources */,
 				2905B8A32683C29C005BF20B /* CryptoCurrenciesListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,7 +440,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -491,7 +495,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

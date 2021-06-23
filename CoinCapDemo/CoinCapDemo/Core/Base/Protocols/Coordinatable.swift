@@ -8,9 +8,11 @@
 import UIKit
 
 protocol Coordinator: AnyObject {
-    var navigationController: UINavigationController { get set }
+  var navigationController: UINavigationController { get set }
+  var viewController: UIViewController? { get set }
 
-    func start()
+  func assembleModule()
+  func start()
 }
 
 extension Coordinator {
@@ -20,11 +22,5 @@ extension Coordinator {
 }
 
 protocol Coordinatable {
-    var coordinator: Coordinator? { get set }
-}
-
-protocol CoordinatorModular: Coordinator {
-  var viewController: UIViewController? { get set }
-
-  func assembleModule()
+  var coordinator: Coordinator? { get set }
 }
