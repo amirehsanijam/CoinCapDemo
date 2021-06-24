@@ -8,13 +8,13 @@
 import Foundation
 
 struct CryptoCurrenciesListAPIRouter: APIRouter {
-  typealias ResponseType = CryptoCurrenciesListResponseModel
+  typealias ResponseType = [CryptoCurrenciesListResponseModel]
   var requestBody: Encodable?
 
-  static var method: RequestType = .POST
-  static var path: String = ""
+  static var method: RequestType = .GET
+  static var path: String = "v1/cryptocurrency/listings/latest"
 
-  func generateStubResponse() -> CryptoCurrenciesListResponseModel {
-    CryptoCurrenciesListResponseModel()
+  func generateStubResponse() -> [CryptoCurrenciesListResponseModel] {
+    [CryptoCurrenciesListResponseModel()]
   }
 }
