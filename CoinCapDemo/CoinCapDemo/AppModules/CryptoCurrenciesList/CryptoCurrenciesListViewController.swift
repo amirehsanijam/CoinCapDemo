@@ -63,9 +63,10 @@ class CryptoCurrenciesListViewController: BaseViewController<DefaultViewState, C
     super.setupActions()
 
     cryptoList.rx
-      .itemSelected
-      .bind { _ in
-        (self.coordinator as? CryptoCurrenciesListCoordinator)?.navigateToDetail()
+      .modelSelected(CryptoCurrenciesListResponseModel.self)
+      .bind { model in
+        guard let id = model.id else { return }
+        (self.coordinator as? CryptoCurrenciesListCoordinator)?.navigateToDetail(id: id)
       }.disposed(by: bag)
   }
 
