@@ -115,4 +115,3 @@ struct Usd: Codable {
     case lastUpdated = "last_updated"
   }
 }
-
