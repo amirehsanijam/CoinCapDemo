@@ -8,13 +8,13 @@
 import Resolver
 import RxCocoa
 import RxSwift
+import SnapKit
 import UIKit
 
 protocol BaseViewControlable: AnyObject, Coordinatable, Storyboardable {
   associatedtype State: Statable
   associatedtype ViewModel: ViewModelable
 
-  var styledTitle: String? { get set }
   var bag: DisposeBag { get }
 
   func setupView()
@@ -26,7 +26,6 @@ protocol BaseViewControlable: AnyObject, Coordinatable, Storyboardable {
 class BaseViewController<State: Statable, ViewModel: ViewModelable>: UIViewController, UIGestureRecognizerDelegate {
 
   var coordinator: Coordinator?
-  var styledTitle: String?
   private let tap = UITapGestureRecognizer()
 
   @Injected var viewModel: ViewModel
@@ -74,11 +73,29 @@ class BaseViewController<State: Statable, ViewModel: ViewModelable>: UIViewContr
     }
     return true
   }
+
+  func loading(_ enabled: Bool) {
+    if enabled {
+      let indicator = UIActivityIndicatorView(style: .gray)
+      indicator.hidesWhenStopped = true
+      indicator.tag = 9000
+      view.addSubview(indicator)
+      indicator.snp.makeConstraints { make in
+        make.center.equalToSuperview()
+        make.width.height.equalTo(40)
+      }
+      indicator.startAnimating()
+    } else {
+      view.viewWithTag(9000)?.removeFromSuperview()
+    }
+  }
+
+  func showMessage(message: String?) {
+    let alert = UIAlertController()
+    let action = UIAlertAction(title: message, style: .cancel) { _ in }
+    alert.addAction(action)
+    present(alert, animated: true, completion: nil)
+  }
 }
 
 extension BaseViewController: BaseViewControlable {}
-
-enum LoadingType {
-  case button(button: UIButton)
-  case view
-}

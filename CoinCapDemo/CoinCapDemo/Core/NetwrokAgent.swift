@@ -14,7 +14,6 @@ class NetworkAgent {
   private var decoder: JSONDecoder!
   private var encoder: JSONEncoder!
   private var session: URLSession!
-  @Injected private var userDefault: UserDefaultAgent
 
   private var log: Log!
 

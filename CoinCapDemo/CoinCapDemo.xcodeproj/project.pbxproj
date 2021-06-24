@@ -14,7 +14,6 @@
 		2905B8762683AB7A005BF20B /* MockNetworkAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8752683AB7A005BF20B /* MockNetworkAgent.swift */; };
 		2905B8782683AB8E005BF20B /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8772683AB8E005BF20B /* APIRouter.swift */; };
 		2905B87A2683ABA3005BF20B /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8792683ABA3005BF20B /* NetworkError.swift */; };
-		2905B87C2683ACEA005BF20B /* UserDefaultAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B87B2683ACEA005BF20B /* UserDefaultAgent.swift */; };
 		2905B87E2683AD18005BF20B /* DIAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B87D2683AD18005BF20B /* DIAgent.swift */; };
 		2905B8802683AD63005BF20B /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B87F2683AD63005BF20B /* Log.swift */; };
 		2905B8832683B0DF005BF20B /* DictionaryEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2905B8822683B0DF005BF20B /* DictionaryEncoder.swift */; };
@@ -54,7 +53,6 @@
 		2905B8752683AB7A005BF20B /* MockNetworkAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkAgent.swift; sourceTree = "<group>"; };
 		2905B8772683AB8E005BF20B /* APIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		2905B8792683ABA3005BF20B /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
-		2905B87B2683ACEA005BF20B /* UserDefaultAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultAgent.swift; sourceTree = "<group>"; };
 		2905B87D2683AD18005BF20B /* DIAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIAgent.swift; sourceTree = "<group>"; };
 		2905B87F2683AD63005BF20B /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		2905B8822683B0DF005BF20B /* DictionaryEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryEncoder.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				2905B8752683AB7A005BF20B /* MockNetworkAgent.swift */,
 				2905B8772683AB8E005BF20B /* APIRouter.swift */,
 				2905B8792683ABA3005BF20B /* NetworkError.swift */,
-				2905B87B2683ACEA005BF20B /* UserDefaultAgent.swift */,
 				2905B87D2683AD18005BF20B /* DIAgent.swift */,
 				2905B87F2683AD63005BF20B /* Log.swift */,
 				2905B8822683B0DF005BF20B /* DictionaryEncoder.swift */,
@@ -366,7 +363,6 @@
 				2905B8A22683C29C005BF20B /* CryptoCurrenciesListModel.swift in Sources */,
 				2905B8B02683C2C9005BF20B /* CryptoDetailViewModel.swift in Sources */,
 				2905B8762683AB7A005BF20B /* MockNetworkAgent.swift in Sources */,
-				2905B87C2683ACEA005BF20B /* UserDefaultAgent.swift in Sources */,
 				2905B8AB2683C2C9005BF20B /* CryptoDetailCoordinator.swift in Sources */,
 				2905B8802683AD63005BF20B /* Log.swift in Sources */,
 				2905B88F2683BE82005BF20B /* Coordinatable.swift in Sources */,
