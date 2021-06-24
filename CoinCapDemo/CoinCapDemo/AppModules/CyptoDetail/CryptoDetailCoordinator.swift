@@ -11,14 +11,16 @@ import UIKit
 class CryptoDetailCoordinator: Coordinator {
   var viewController: UIViewController?
   var navigationController: UINavigationController
+  var id: Int
 
-  init(_ navigationController: UINavigationController) {
+  init(_ navigationController: UINavigationController, id: Int) {
     self.navigationController = navigationController
+    self.id = id
     assembleModule()
   }
 
   func assembleModule() {
-    Resolver.register { CryptoDetailViewModel() }
+    Resolver.register { CryptoDetailViewModel(id: self.id) }
     viewController = CryptoDetailViewController.instantiate()
     (viewController as? CryptoDetailViewController)?.coordinator = self
   }

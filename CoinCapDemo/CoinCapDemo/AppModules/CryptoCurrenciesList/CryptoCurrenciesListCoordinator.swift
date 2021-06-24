@@ -31,8 +31,8 @@ class CryptoCurrenciesListCoordinator: Coordinator {
       .coordinator = self
   }
 
-  func navigateToDetail() {
-    let coordinator = CryptoDetailCoordinator(navigationController)
+  func navigateToDetail(id: Int) {
+    let coordinator = CryptoDetailCoordinator(navigationController, id: id)
     coordinator.start()
   }
 }

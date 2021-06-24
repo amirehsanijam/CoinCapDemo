@@ -11,5 +11,6 @@ target 'CoinCapDemo' do
   pod 'RxCocoa'
   pod "Resolver"
   pod 'SnapKit'
+  pod 'Kingfisher'
 
 end

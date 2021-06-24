@@ -75,28 +75,3 @@ class CryptoViewCell: UITableViewCell {
       return (UInt64(amount), "")
   }
 }
-
-extension Formatter {
-  static let withSeparator: NumberFormatter = {
-    let formatter = NumberFormatter()
-    formatter.groupingSeparator = ","
-    formatter.numberStyle = .decimal
-    return formatter
-  }()
-}
-
-extension Double {
-  var formattedWithSeparator: String {
-    return Formatter.withSeparator.string(for: self) ?? ""
-  }
-
-  var clean: String {
-    return String(format: "%.0f", self)
-  }
-}
-
-extension BinaryInteger {
-  var formattedWithSeparator: String {
-    return Formatter.withSeparator.string(for: self) ?? ""
-  }
-}
