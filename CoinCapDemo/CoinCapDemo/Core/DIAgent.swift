@@ -19,13 +19,12 @@ struct DIAgent {
 struct DefaultInjection {
 
   init() {
-    Resolver.register { UserDefaultAgent() }
     Resolver.register { Log(logLevel: .debug) }
 
     #if MockServer
     Resolver.register { MockNetworkAgent(networkDelay: 1) as NetworkAgent }
     #else
-    let baseURLString = Bundle.main.infoDictionary?["base URL"] as? String ?? ""
+    let baseURLString = Bundle.main.infoDictionary?["baseURL"] as? String ?? ""
     Resolver.register { NetworkAgent(baseUrl: URL(string: baseURLString)) }
     #endif
   }

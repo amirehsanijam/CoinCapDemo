@@ -30,4 +30,9 @@ class CryptoCurrenciesListCoordinator: Coordinator {
     (viewController as? CryptoCurrenciesListViewController)?
       .coordinator = self
   }
+
+  func navigateToDetail() {
+    let coordinator = CryptoDetailCoordinator(navigationController)
+    coordinator.start()
+  }
 }

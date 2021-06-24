@@ -51,25 +51,54 @@ extension APIRouter {
     request.setValue("application/json", forHTTPHeaderField: "Accept")
     request.setValue("gzip, deflate, br", forHTTPHeaderField: "Accept-Encoding")
 
-    if hasToken, let apiKey: String? = UserDefaultAgent().get(forKey: .apiKey) {
+    if hasToken, let apiKey = Bundle.main.infoDictionary?["apiKey"] as? String {
       request.setValue(apiKey, forHTTPHeaderField: "X-CMC_PRO_API_KEY")
     }
 
     if let data = setupRequestBody() {
-      request.httpBody = data
+      request.url = URL(string: try data.urlEncodedString(base: url.absoluteString))
     }
 
     return request
   }
 
-  private func setupRequestBody() -> Data? {
+  private func setupRequestBody() -> [String: Any?]? {
     let data = requestBody?.toJSON()
-    Log(logLevel: .debug).debug(String(data: data ?? Data(), encoding: .utf8) ?? "")
+    let params = try? DictionaryEncoder().encodeOf(data)
+    Log(logLevel: .debug).debug(String(data: requestBody?.toJSON() ?? Data(), encoding: .utf8) ?? "")
 
-    return data
+    return params
   }
 }
 
 extension Encodable {
   func toJSON() -> Data? { try? JSONEncoder().encode(self) }
+}
+
+// MARK: - Dictionary Extension
+public extension Dictionary where Key == String, Value == Any? {
+
+    /// Encode a dictionary as url encoded string
+    ///
+    /// - Parameter base: base url
+    /// - Returns: encoded string
+    /// - Throws: throw `.dataIsNotEncodable` if data cannot be encoded
+    func urlEncodedString(base: String = "") throws -> String {
+        guard self.count > 0 else { return "" } // nothing to encode
+
+        var items: [URLQueryItem] = []
+
+        self.forEach { (key, value) in
+            guard let v = value else { return } // skip item if no value is set
+          items.append(URLQueryItem(name: key, value: String(describing: v)))
+        }
+
+        var urlComponents = URLComponents(string: base)!
+        urlComponents.queryItems = items
+        guard let encodedString = urlComponents.url else {
+          throw NetworkError.parsing
+        }
+        return encodedString.absoluteString
+    }
+
 }
