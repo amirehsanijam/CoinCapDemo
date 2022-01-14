@@ -8,7 +8,7 @@ It represents a list of crypto currencies and show a litte info about each item 
 
 2- Open the terminal and go to the directory of cloned project and run the `pod install`
 
-3- Open the `CoinCap.xcworkspace` via xcode build and run
+3- Open the `CoinCap.xcworkspace` via xcode then build and run
 
 # Requirements
 - iOS 12+
